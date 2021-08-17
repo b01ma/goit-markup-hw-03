@@ -13,6 +13,7 @@
  */
 
 /* Основные переменные */
+
 :root {
   --main-bg-color: #ffffff;
   --button-bg-color: #2196f3;
@@ -33,6 +34,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: block;
 }
 
 /* Общее оформление списков */
@@ -52,7 +54,15 @@ body {
   color: var(--accent-text-color);
 }
 
-/* Логотип */
+/* Хэдер, Родитель 3х блоков хэдера */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Логотип, 1й блок Флекса хэдера*/
 .logo {
   color: #2196f3;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -62,6 +72,42 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+
+.logo-header {
+  margin: 25px 93px 24px 215px;
+}
+/* 2й блок Флекса для хэдера */
+.nav {
+  flex-grow: 1;
+}
+
+/* Внутри 2го блока хэдера, панель навигации */
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Заданы значения марджина, чтобы разделить слова согласно шаблону */
+.nav-list li,
+.contact-list li {
+  margin-right: 50px;
+}
+
+/* Убираем значение последнего элемента, чтобы точно установить марджин между блоками */
+.nav-list li:last-child,
+.contact-list li:last-child {
+  margin-right: 0;
+}
+
+/* 3й бок Флекса хэдера, контакты */
+.contact-list {
+  display: flex;
+  margin-right: 215px;
+  padding: 0;
+}
+
 /* Цвет логотипа в хэдере */
 header .logo-span {
   color: #000000;
@@ -91,6 +137,13 @@ header .logo-span {
 
 /* Герой */
 .hero {
+  background-color: #2f303a;
+  padding: 200px 452px;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-heading {
@@ -101,6 +154,10 @@ header .logo-span {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 696px;
 }
 
 .hero-btn {
@@ -112,9 +169,30 @@ header .logo-span {
   line-height: 1.85;
   text-align: center;
   letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
 }
 
 /* Преимущества */
+
+/* Скрытый заголовок, но виден для ассестивных уствройств */
+.advantage h2 {
+  position: fixed;
+  top: -100%;
+}
+
+.advantage-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 94px 215px;
+  padding: 0;
+}
+
+.advantage-list li {
+  flex-basis: 270px;
+  padding: 0;
+}
+
 .advantage h3 {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -125,6 +203,13 @@ header .logo-span {
 }
 
 /* О компании */
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 215px 94px 215px;
+  padding: 0;
+}
+
 .about h2,
 .team h2 {
   color: var(--secondary-text-color);
@@ -133,9 +218,22 @@ header .logo-span {
   line-height: 1.67;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 /* Команда компании - нет оформления на данном этапе */
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 215px 94px 215px;
+  padding: 0;
+}
+
 .team h3 {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -188,6 +286,13 @@ header .logo-span {
 /* Подвал сайта */
 .footer {
   background-color: #2f303a;
+  margin: 0;
+  padding: 60px 0 60px 215px;
+}
+
+.footer-list {
+  padding: 0;
+  margin: 20px 0 0 0;
 }
 
 .address {
@@ -198,6 +303,10 @@ header .logo-span {
 /* Цвет части логотипа подвала сайта */
 footer .logo-span {
   color: #ffffff;
+}
+
+.logo-footer {
+  margin: 0;
 }
 
 .footer-contacts {

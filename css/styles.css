@@ -1,0 +1,206 @@
+/* 
+Основной цвет фона #FFFFFF
+Цвет фона подвала сайта и Героя #2F303A
+Основной цвет текста - #757575
+Вторичный цвет текста- #212121
+Акцент текста - #2196F3
+Заглавный текст Героя - #FFFFFF
+Логотип подвал #2196F3 и #FFFFFF
+Логотип хэдер #2196F3 и #000000
+Тень логотипа - #000000
+Кнопка героя: фот - #2196F3 текст - #FFFFFF
+Футер фон - ##2F303A
+ */
+
+/* Основные переменные */
+:root {
+  --main-bg-color: #ffffff;
+  --button-bg-color: #2196f3;
+  --footer-bg-color: #2f303a;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --button-text-color: #ffffff;
+}
+
+/* Основные параметры применяемые для наибольшего числа элементов */
+body {
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Общее оформление списков */
+.list {
+  list-style: none;
+}
+
+/* Общее оформление ссылок */
+.link {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+/* Псевдоклассы для всех ссылок */
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Логотип */
+.logo {
+  color: #2196f3;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+/* Цвет логотипа в хэдере */
+header .logo-span {
+  color: #000000;
+}
+
+/* Панель навигации */
+.nav-list,
+.contact-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-contacts .link {
+  color: var(--primary-text-color);
+}
+
+.nav-contacts .link:focus,
+.nav-contacts .link:hover {
+  color: var(--accent-text-color);
+}
+
+.nav-contacts .footer-contacts {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Герой */
+.hero {
+}
+
+.hero-heading {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Преимущества */
+.advantage h3 {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* О компании */
+.about h2,
+.team h2 {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Команда компании - нет оформления на данном этапе */
+.team h3 {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Портфолио */
+.portfolio-btn {
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.porfolio-btn:focus {
+  background-color: var(--button-bg-color);
+  color: #ffffff;
+}
+
+.projects h2 {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects p {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+/* Подвал сайта */
+.footer {
+  background-color: #2f303a;
+}
+
+.address {
+  color: #ffffff;
+  font-style: normal;
+}
+
+/* Цвет части логотипа подвала сайта */
+footer .logo-span {
+  color: #ffffff;
+}
+
+.footer-contacts {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.6);
+}

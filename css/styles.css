@@ -10,6 +10,7 @@
 Тень логотипа - #000000
 Кнопка героя: фон - #2196F3 текст - #FFFFFF
 Футер фон - #2F303A
+Портфолио bg color btn - background: #F5F4FA;
  */
 
 /* Основные переменные */
@@ -86,8 +87,6 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  outline: 2px solid red;
 }
 
 /* Хэдер */
@@ -98,8 +97,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-
-  outline: 2px solid green;
 }
 
 .header {
@@ -107,6 +104,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  border-bottom: 1px solid #ececec;
 }
 
 /* Хэдэр/Логотип, */
@@ -137,7 +136,8 @@ header .logo-span {
   letter-spacing: 0.02em;
 }
 
-.list-item {
+.nav-list .list-item,
+.nav-contacts .list-item {
   display: block;
   margin-right: 50px;
 }
@@ -302,6 +302,13 @@ header .logo-span {
 }
 
 /* Портфолио */
+
+/* Отбор портфолио */
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio-btn {
   font-family: "Roboto", sans-serif;
   color: var(--secondary-text-color);
@@ -311,6 +318,17 @@ header .logo-span {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  border: 0;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+
+  display: block;
+  padding: 6px 22px;
+}
+
+.portfolio-list .list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-btn:hover,
@@ -319,18 +337,51 @@ header .logo-span {
   color: #ffffff;
 }
 
+/* Примеры работ */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+
+.projects-list .list-item {
+  flex-basis: 370px;
+  margin-bottom: 30px;
+}
+
+.image {
+  display: block;
+}
+
 .projects h2 {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
 }
 
 .projects p {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 /* Подвал сайта */

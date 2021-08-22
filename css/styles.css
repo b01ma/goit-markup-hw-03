@@ -319,10 +319,6 @@ header .logo-span {
 
 /* Портфолио */
 
-.portfolio {
-  padding-bottom: 64px;
-}
-
 /* Отбор портфолио */
 .portfolio-list {
   display: flex;
